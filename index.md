@@ -1,52 +1,68 @@
 ---
 layout: default
-title: 一本清单（OneList）隐私政策
+title: Volume Control 隐私政策
 ---
 
-# 一本清单（OneList）隐私政策
+# Volume Control 隐私政策
 
-生效日期：2026 年 8 月 10 日  
-最近更新日期：2026 年 8 月 10 日
+生效日期：2026 年 8 月 17 日  
+最近更新日期：2026 年 8 月 17 日
 
-一本清单（英文名称：OneList，以下简称“本应用”）由刘靖（以下简称“我们”）提供。本政策说明您使用本应用时，我们如何处理您的信息。
+Volume Control（以下简称“本应用”）由其开发者（以下简称“我们”）提供。本政策说明您使用本应用时，信息如何被处理。
 
 ## 1. 我们处理的信息
 
-本应用的核心功能以本地设备为主。当您创建待办、日程、分类、备注、提醒或完成记录时，相关内容会用于在您的设备上显示、存储和管理。
+本应用的声音处理功能在您的 Mac 本机运行。为提供主音量、应用独立音量、均衡音量、声道控制和播放保护，本应用会在内存中实时处理系统音频。音频不会保存成录音文件，也不会上传给我们或第三方。
 
-如您选择使用 Apple 日历或提醒事项功能，本应用会在获得系统授权后读取或写入您选择使用的日历或提醒事项数据。若您使用 Apple Watch、桌面小组件或本地备份恢复功能，必要的事项数据会在您的设备、已配对的 Apple Watch 及本应用的 App Group 存储空间之间同步或读取，以提供相应功能。
+为记住您的设置，本应用会在设备本地保存输出设备标识与名称、应用名称与 Bundle ID、音量、静音、声音处理选项及界面偏好。我们无法远程访问这些信息。
 
 ## 2. 系统权限
 
-本应用仅在相关功能需要时请求系统权限：
+本应用仅在相关功能需要时请求以下权限：
 
-- 日历权限：显示、创建或管理您选择授权的 Apple 日历事项；
-- 提醒事项权限：显示或管理您选择授权的 Apple 提醒事项；
-- 通知权限：按您的设置发送本地提醒通知。
+- **系统音频录制（部分 macOS 版本显示为“屏幕与系统音频录制”）：**用于在本机处理系统音频并为固定音量的输出设备提供软件音量控制；
+- **辅助功能：**仅用于响应音量增、音量减和静音三个系统媒体键，不读取键盘输入内容，也不跟踪鼠标；
+- **用户选择的文件：**仅在您主动导入或导出配置时，读取或写入您选择的文件。
 
-您可在系统设置中随时改变授权。拒绝授权不会影响不依赖该权限的核心待办记录功能。
+您可以随时在 macOS“系统设置”中更改权限。拒绝权限只会影响依赖该权限的功能。
 
-## 3. 第三方服务
+## 3. 本地存储与诊断
 
-在您同意本隐私政策后，本应用会初始化 Google Firebase Core、Firebase Analytics 和 Firebase Crashlytics，用于基础使用分析、性能监控、崩溃诊断和稳定性改进。这些服务可能处理设备标识符、应用版本与运行状态、使用与性能数据、崩溃及诊断信息。
+设备配置、应用音量规则、功能开关和基础运行状态保存在应用沙盒的 UserDefaults 中。7 天体验的开始日期保存在 macOS 钥匙串中，用于防止卸载重装后重复开始体验。
 
-我们不会向 Firebase 主动发送您待办、日程、备注、分类或提醒的文本内容。Firebase 对信息的处理同时受其隐私说明约束：[Firebase 隐私与安全](https://firebase.google.com/support/privacy)。
+本应用使用 Apple MetricKit 在本机统计崩溃、卡顿和恢复次数，用于在诊断页面显示运行状态。应用不会自动把诊断内容发送给我们。只有当您主动复制并发送诊断信息时，接收方才会获得您选择分享的内容。
 
-## 4. 信息的存储、备份与删除
+## 4. 购买与 App Store
 
-本应用当前不提供应用账号或自建云端同步服务。您的核心事项数据主要存储在您的设备上；使用本地备份功能时，备份文件由您自行选择保存位置和分享对象。
+订阅和永久解锁由 Apple 的 StoreKit 与 App Store 处理。本应用会读取 Apple 返回的商品信息和购买权益，以显示价格并解锁功能。我们不会接触或保存您的 Apple ID、银行卡或其他付款信息。
 
-您可以在本应用中删除相应内容，也可以卸载本应用以删除其本地沙盒数据。若您已将数据写入 Apple 日历、提醒事项或导出为备份文件，请分别在相应服务或保存位置中管理、删除。
+Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](https://www.apple.com/legal/privacy/)。
 
-## 5. 未成年人
+## 5. 网络与第三方服务
 
-如您是未成年人，请在监护人同意和指导下使用本应用。
+本应用会连接 Apple 服务以加载内购商品、验证购买权益和检查 App Store 版本更新。本应用不包含广告 SDK、第三方分析 SDK、Firebase 或第三方崩溃统计服务。
 
-## 6. 政策更新
+我们不出售、出租或向第三方提供您的个人信息、音频内容、设备配置或应用音量规则。
 
-我们可能因产品功能、法律法规或监管要求更新本政策。更新后的版本会在本页面和/或应用内公布；如法律要求，我们会在处理前取得相应同意。
+## 6. 配置导入与导出
 
-## 7. 联系我们
+当您使用配置导出功能时，配置文件会保存到您选择的位置。文件包含声音设置和设备配置，不包含音频内容。该文件的保存、分享与删除由您自行管理。
+
+## 7. 信息删除
+
+您可以在应用中修改或移除相应设置。卸载本应用会删除应用沙盒中的本地数据。为防止重复体验，存储在 macOS 钥匙串中的体验开始日期可能在卸载后继续保留；您可以使用“钥匙串访问”删除服务名为 `com.shulinlou.soundcontrolformac.pro-trial` 的项目。
+
+您主动导出的配置文件需要在对应保存位置单独删除。
+
+## 8. 未成年人
+
+本应用不以儿童为目标用户，也不会主动收集未成年人的个人信息。未成年人应在监护人同意和指导下使用本应用。
+
+## 9. 政策更新
+
+我们可能因功能、法律法规或审核要求更新本政策。更新后的版本会发布在本页面；如法律要求，我们会在处理信息前取得相应同意。
+
+## 10. 联系我们
 
 如您对本政策有任何问题、意见或请求，请联系：
 
@@ -54,50 +70,66 @@ title: 一本清单（OneList）隐私政策
 
 ---
 
-# OneList Privacy Policy
+# Volume Control Privacy Policy
 
-**Effective date:** August 10, 2026  
-**Last updated:** August 10, 2026
+**Effective date:** August 17, 2026  
+**Last updated:** August 17, 2026
 
-OneList (the “App”) is provided by 刘靖 (“we”, “us”). This policy explains how information is handled when you use the App.
+Volume Control (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
 
 ## 1. Information we process
 
-The App’s core functionality is device-based. Tasks, schedules, categories, notes, reminders, and completion records that you create are used to display, store, and manage your content on your device.
+The App processes sound locally on your Mac. To provide master volume, per-app volume, volume leveling, channel controls, and playback protection, the App processes system audio in memory in real time. Audio is not saved as a recording or uploaded to us or any third party.
 
-If you choose to use Apple Calendar or Reminders, the App reads or writes the calendar or reminder data you authorize through the relevant system permission. When you use Apple Watch, widgets, or local backup and restore, the necessary task data may be synchronized or read between your devices and the App Group storage to provide those features.
+To remember your preferences, the App stores output-device identifiers and names, application names and bundle identifiers, volume and mute settings, audio-processing options, and interface preferences locally on your device. We cannot access this information remotely.
 
 ## 2. System permissions
 
-The App requests system permissions only when needed for the relevant feature:
+The App requests system permissions only when required for the relevant feature:
 
-- **Calendar:** to display, create, or manage the Apple Calendar events you authorize;
-- **Reminders:** to display or manage the Apple Reminders you authorize;
-- **Notifications:** to deliver local reminder notifications according to your settings.
+- **System Audio Recording (shown as “Screen & System Audio Recording” on some macOS versions):** processes system audio locally and provides software volume control for fixed-volume output devices;
+- **Accessibility:** responds only to the system volume-up, volume-down, and mute media keys. The App does not read typed text or track the mouse;
+- **User-selected files:** reads or writes only the file you choose when importing or exporting a configuration.
 
-You can change these permissions in system settings at any time. Declining a permission does not affect core task-recording features that do not rely on it.
+You can change these permissions at any time in macOS System Settings. Declining a permission only affects features that depend on it.
 
-## 3. Third-party services
+## 3. Local storage and diagnostics
 
-After you agree to this Privacy Policy, the App initializes Google Firebase Core, Firebase Analytics, and Firebase Crashlytics for basic analytics, performance monitoring, crash diagnostics, and stability improvements. These services may process device identifiers, app version and runtime state, usage and performance data, and crash or diagnostic information.
+Device profiles, per-app volume rules, feature preferences, and basic health counters are stored in the App sandbox using UserDefaults. The start date of the seven-day trial is stored in the macOS Keychain to prevent the trial from restarting after the App is reinstalled.
 
-We do not intentionally send the text of your tasks, schedules, notes, categories, or reminders to Firebase. Firebase’s processing is also governed by its [privacy and security information](https://firebase.google.com/support/privacy).
+The App uses Apple MetricKit locally to count crashes, hangs, and recovery events for the diagnostics screen. Diagnostic information is not sent to us automatically. A recipient receives diagnostic information only if you choose to copy and share it.
 
-## 4. Storage, backup, and deletion
+## 4. Purchases and the App Store
 
-The App currently provides no App account or self-hosted cloud-sync service. Your core task data is primarily stored on your device. If you use local backup, you choose where the backup file is saved and with whom it is shared.
+Subscriptions and lifetime purchases are processed by Apple through StoreKit and the App Store. The App reads product information and purchase entitlements returned by Apple to display prices and unlock features. We do not receive or store your Apple ID, card details, or other payment information.
 
-You can delete content in the App or uninstall the App to remove its local sandbox data. Data that you have written to Apple Calendar or Reminders, or exported as a backup file, must be managed or deleted in the corresponding service or saved location.
+Apple processes related information under the [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
-## 5. Children
+## 5. Network access and third-party services
 
-If you are a minor, please use the App with the consent and guidance of your guardian.
+The App connects to Apple services to load in-app purchase products, verify purchase entitlements, and check the latest App Store version. The App contains no advertising SDK, third-party analytics SDK, Firebase, or third-party crash-reporting service.
 
-## 6. Changes to this policy
+We do not sell, rent, or disclose your personal information, audio content, device profiles, or per-app volume rules to third parties.
 
-We may update this policy for product, legal, or regulatory reasons. Updates will be posted on this page and/or in the App. Where required by law, we will obtain appropriate consent before processing.
+## 6. Configuration import and export
 
-## 7. Contact
+When you export a configuration, the file is saved to the location you choose. It contains audio preferences and device profiles, but no audio content. You control where the file is stored, how it is shared, and when it is deleted.
+
+## 7. Deletion
+
+You can change or remove settings in the App. Uninstalling the App removes local data in its sandbox. To prevent repeated trials, the trial start date stored in the macOS Keychain may remain after uninstalling the App. You can remove the Keychain item whose service name is `com.shulinlou.soundcontrolformac.pro-trial` using Keychain Access.
+
+Configuration files that you exported must be deleted separately from the location where you saved them.
+
+## 8. Children
+
+The App is not directed to children and does not intentionally collect personal information from children. Minors should use the App with the consent and guidance of a guardian.
+
+## 9. Changes to this policy
+
+We may update this policy for product, legal, or App Review reasons. Updates will be posted on this page. Where required by law, we will obtain appropriate consent before processing information.
+
+## 10. Contact
 
 For questions, comments, or requests about this policy, contact:
 
